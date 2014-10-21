@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_bottom_line"
+    android:orientation="vertical" >
+
+    <!-- android:background="@drawable/card_bottom_line" -->
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thing_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+         />
+
+    <TextView
+        android:id="@+id/things_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:text="尔思活力π智能羽毛球拍"
+        android:textColor="#000000"
+        android:textSize="@dimen/sp_17" />
+
+    <TextView
+        android:id="@+id/things_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:text="集高科技功能技术为一身的智能数字化碳纤维羽毛球拍环，简直高大上"
+        android:textColor="#C0C0C0"
+        android:textSize="@dimen/sp_14" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_25"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_5" >
+
+       <com.knewone.util.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/author_avatar"
+        android:layout_width="36dip"
+        android:layout_height="36dip"
+        android:paddingLeft="2dp"
+        android:background="@drawable/white_circle"
+        android:contentDescription="@null"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/picture_man" 
+        app:corner_radius="30dip"
+        app:border_width="1dip"
+        app:border_color="#DCDCDC"
+        app:mutate_background="true"
+        app:oval="true"
+        android:scaleType="centerCrop"
+        />
+       
+      
+       
+        
+        <TextView
+            android:id="@+id/author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/author_avatar"
+            android:text="牛玩"
+            android:paddingLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#C0C0C0"
+            android:textSize="@dimen/sp_14" />
+        
+        <!-- <ImageView
+            android:id="@+id/fanciers_count_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/author_name"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@null"
+            android:layout_alignParentRight="true"
+            android:paddingRight="45dp"
+            android:src="@drawable/like" /> -->
+            
+        <ImageView
+        android:layout_toLeftOf="@+id/fanciers_count"
+        android:id="@+id/fanciers_count_img"
+        android:layout_width="36dip"
+        android:layout_height="36dip"
+        android:background="@drawable/white_circle"
+        android:contentDescription="@null"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/like"
+        android:layout_marginRight="25dp" 
+        />
+            
+            
+
+        <TextView
+            android:id="@+id/fanciers_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/dp_5"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:text="111"
+            android:textColor="#b5c0cf"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+</LinearLayout>

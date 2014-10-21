@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Theme.KnewOne" parent="Theme.Sherlock.Light">
+        <item name="actionBarStyle">@style/Widget.KnewOne.ActionBar</item>
+        <item name="android:actionBarStyle">@style/Widget.KnewOne.ActionBar</item>
+    </style> 
+    
+    <!-- 标题栏的样式 -->
+    <style name="Widget.KnewOne.ActionBar" parent="Widget.Sherlock.ActionBar.Solid">   
+        <item name="background">#1791d2</item>
+        <item name="backgroundStacked">#1791d2</item>
+        <item name="backgroundSplit">#1791d2</item>
+        <item name="titleTextStyle">@style/Widget.KnewOne.ActionBar.Title</item>
+        
+        <item name="android:background">#1791d2</item>
+        <item name="android:backgroundStacked">#1791d2</item>
+        <item name="android:backgroundSplit">#1791d2</item>
+        <item name="android:titleTextStyle">@style/Widget.KnewOne.ActionBar.Title</item>
+    </style>
+    
+    <style name="Widget.KnewOne.ActionBar.Title" parent="@android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#fff</item>
+    </style>
+    
+</resources>
